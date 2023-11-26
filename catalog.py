@@ -1,4 +1,4 @@
-def menu():
+def catalog():
     # Prices for individual items
     fried_chicken_price = 82.00
     fries_price = 50.00
@@ -42,20 +42,22 @@ def menu():
     print("visit kyusrestaurantdelivery.com for deliveries!")
     print(" ")
 
-
+#It will show an introductory message
 while True:
     print("Hello! Welcome to Kyu's Restaurant!")
     input("Please Enter to Continue... \n " )
 
+#It will ask the users if they want to see the menu
     options = input("Do you want to see the menu? \n yes \n no \n ")
     if options.lower() in ['yes', 'y']:
-        menu()
+        catalog()
     elif options.lower() in ['no', 'n']:
         print("Okay! Have a good day!")
         break
     else:
         print("I don't understand")
 
+#It will break the loop by answering yes
     exit_choice = input("Do you want to exit? \n yes \n no \n ")
     if exit_choice.lower() in ['yes', 'y'] :
         break
